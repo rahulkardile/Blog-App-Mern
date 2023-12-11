@@ -17,7 +17,7 @@ const app = express();
 
 dotenv.config();
 const MONGO_URL = process.env.MONGODB
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3300
 
 const secret = 'jdsidw9e3913e8819i21kejw9';
 const upload = multer({ dest: 'uploads/' })
