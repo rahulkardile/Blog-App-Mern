@@ -39,6 +39,10 @@ try {
   console.log('Database is not connected');
 }
 
+app.get("/", (req, res) => {
+  res.send("Okk We Are Live");
+})
+
 app.get("/all", async (req, res) => {
   const data = await User.find();
   res.json(data)
